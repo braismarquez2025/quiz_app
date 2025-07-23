@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: quiz_app
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn quiz_app.wsgi
+    envVars:
+      - key: DEBUG
+        value: "False"
