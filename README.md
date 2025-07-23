@@ -15,7 +15,7 @@ Esta es una solución al [desafío de Frontend Quiz app en Frontend Mentor](http
 ## Descripción general
 
 ### Captura de pantalla
-![](./static/images/images/Vite-App-07-23-2025_04_28_PM.png)
+![](./static/images/Vite-App-07-23-2025_04_28_PM.png)
 
 
 ### Links
