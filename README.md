@@ -10,10 +10,7 @@ Esta es una solución al [desafío de Frontend Quiz app en Frontend Mentor](http
 - [Mi proceso](#mi-proceso)
   - [Llevado a cabo con](#llevado-a-cabo-con)
   - [Lo que aprendí](#lo-que-aprendi)
-  - [Desarrollo continuo](#desarrollo-continuo)
-  - [Recursos útiles](#recursos-utiles)
 - [Autor](#autor)
-- [Agradecimientos](#agradecimientos)
 
 ## Descripción general
 
@@ -29,25 +26,20 @@ Esta es una solución al [desafío de Frontend Quiz app en Frontend Mentor](http
 ## Mi proceso
 
 ### Llevado a cabo con
-
-- Marcado semántico HTML5
-- Propiedades personalizadas de CSS
+- Django
 - Preprocesador SCSS
-- Flexbox
+
+
+### Lo que aprendí
+Este proyecto me ha ayudado un montón en cuanto a juntar el backend como es la parte de java con el frontend, es decir, los estilos y la estructura html. He cogido mucha soltura a la hora de plantear las plantillas y de programar con django en general. Agradezco cualquier feedback ya que me ha dado que hacer el hecho de que el cuestionario no contenga errores.
+
+
 
 ### Autor 
-- Usuario de Frontend - [@braismarquez2025](https://www.frontendmentor.io/profile/braismarquez2025)
+- GitHub - https://github.com/braismarquez2025
 - Gmail - braismarquez2003@gmail.com
+- Usuario de Frontend - [@braismarquez2025](https://www.frontendmentor.io/profile/braismarquez2025)
 
 
 
 
-
-
-
-índice cortado:
-- [Descripción general](#descripcion-general)
-  - [Captura de pantalla](#captura-de-pantalla)
-  - [Llevado a cabo con](#llevado-a-cabo-con)
-  - [Lo que aprendí](#lo-que-aprendi)
-  - [Autor](#autor)
