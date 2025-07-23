@@ -31,7 +31,9 @@ Esta es una solución al [desafío de Frontend Quiz app en Frontend Mentor](http
 
 
 ### Lo que aprendí
-Este proyecto me ha ayudado un montón en cuanto a juntar el backend como es la parte de java con el frontend, es decir, los estilos y la estructura html. He cogido mucha soltura a la hora de plantear las plantillas y de programar con django en general. Agradezco cualquier feedback ya que me ha dado que hacer el hecho de que el cuestionario no contenga errores.
+Este proyecto me ha ayudado un montón en cuanto a juntar el backend como es la parte de java con el frontend, es decir, los estilos y la estructura html. He cogido mucha soltura a la hora de plantear las plantillas y de programar con django en general. Me ha gustado mucho hacer el modo oscuro, ya que es algo que nunca antes había realizado y con las variables de django no he tenido problema.
+
+Agradezco cualquier feedback ya que me ha dado que hacer el hecho de que el cuestionario no contenga errores.
 
 
 
