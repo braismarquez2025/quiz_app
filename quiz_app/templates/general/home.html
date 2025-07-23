@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+
+{% block 'page_content' %}
+{% load static %}
+<body>
+  <header class="header">
+    <div class="header_icons">
+      <img src="{% static 'images/icon-sun-dark.svg' %}" alt="dia" class="sol-oscuro">
+      <img src="{% static 'images/icon-sun-light.svg' %}" alt="dia" class="sol-claro">
+      <div class="header_button toggle-theme">
+        <div class="header_button_circle-1"></div>
+        <div class="header_button_circle-2"></div>
+      </div>
+      <img src="{% static 'images/icon-moon-dark.svg' %}" alt="noche" class="luna-oscuro">
+      <img src="{% static 'images/icon-moon-light.svg' %}" alt="noche" class="luna-claro">
+    </div>
+  </header>
+
+<main class="hero">
+    <div class="hero_titles">
+      <h1 class="hero_title text-preset-2-light">Welcome to the <span class="text-preset-2">Frontend Quiz!</span></h1>
+      <p class="hero_subtitle text-preset-5">Pick a subject to get started.</p>
+    </div>
+
+    <section class="categorias">
+      <a class="categorias_enlace" href="{% url 'preguntas' %}?tema=HTML">
+        <div class="categorias_container">
+            <div class="html_container">
+              <img src="{% static 'images/icon-html.svg' %}" alt="html" class="html">
+            </div>
+              <h2 class="categorias_text text-preset-4">HTML</h2>
+            </div> 
+      </a>
+      <a class="categorias_enlace" href="{% url 'preguntas' %}?tema=CSS">
+        <div class="categorias_container">
+          <div class="css_container">
+            <img src="{% static 'images/icon-css.svg' %}" alt="css" class="css">
+          </div>
+          <h2 class="categorias_text text-preset-4">CSS</h2>
+        </div>
+      </a>
+      <a class="categorias_enlace" href="{% url 'preguntas' %}?tema=Javascript">
+        <div class="categorias_container">
+          <div class="js_container">
+            <img src="{% static 'images/icon-javascript.svg' %}" alt="js" class="js">
+          </div>
+          <h2 class="categorias_text text-preset-4">Javascript</h2>
+        </div>
+      </a>
+      <a class="categorias_enlace" href="{% url 'preguntas' %}?tema=Accessibility">
+        <div class="categorias_container">
+          <div class="access_container">
+            <img src="{% static 'images/icon-accessibility.svg' %}" alt="access" class="access">
+          </div>
+          <h2 class="categorias_text text-preset-4">Accessibility</h2>
+        </div>
+      </a>
+    </section>
+</main>
+</body>
+
+<script src="{% static 'js/main.js' %}"></script>
+
+
+{% endblock 'page_content' %}
+
+
+

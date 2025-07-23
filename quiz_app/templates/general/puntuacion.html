@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block 'page_content' %}
+
+<body>
+  {% include "_includes/_header.html" %}
+  {% load static %}
+    <main class="puntuacion">
+        <section class="puntuacion_titles">
+            <h1 class="puntuacion_title text-preset-2-light">Quiz completed <span class="text-preset-2">You scored...</span></h1>
+        </section>
+
+        <section class="puntuacion-article">
+            <article class="puntuacion_container">
+            <div class="header_preguntas_tema">
+                <div class="header_preguntas_tema-container">
+                    <img id="logo-header" src="" alt="logo">
+                </div>
+                <p id="titulo_tema" class="header_preguntas_tema-text text-preset-4"></p>
+            </div>
+
+            <p id="puntos" class="puntuacion_container-nota text-preset-1"></p>
+            <p class="puntuacion_container-total text-preset-4">out of 10</p>
+
+            </article>
+            <button class="puntuacion_button text-preset-4">Play Again</button>
+
+        </section>
+
+    </main>
+
+    <script src="{% static 'js/main.js' %}"></script>
+  </body>
+</html>
+
+{% endblock 'page_content' %}

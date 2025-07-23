@@ -1,0 +1,19 @@
+{% load static %}
+<header class="header_preguntas">
+  <div class="header_preguntas_tema">
+    <div class="header_preguntas_tema-container">
+      <img id="logo-header" src="" alt="logo">
+    </div>
+    <p class="header_preguntas_tema-text text-preset-4"></p>
+  </div>
+  <div class="header_preguntas_icons">
+    <img src="{% static 'images/icon-sun-dark.svg' %}" alt="dia" class="sol-oscuro">
+    <img src="{% static 'images/icon-sun-light.svg' %}" alt="dia" class="sol-claro">
+    <div class="header_preguntas_button toggle-theme">
+      <div class="header_preguntas_button_circle-1"></div>
+      <div class="header_preguntas_button_circle-2"></div>
+    </div>
+    <img src="{% static 'images/icon-moon-dark.svg' %}" alt="noche" class="luna-oscuro">
+    <img src="{% static 'images/icon-moon-light.svg' %}" alt="noche" class="luna-claro">
+  </div>
+</header>

@@ -1,0 +1,251 @@
+.hero {
+    margin-top: 58px;
+
+    @include breakpoint(tablet) {
+        margin-top: 47px;
+    }
+
+    @include breakpoint(desktop) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin-top: 100px;
+    } 
+    &_title {
+        color: var(--text-title);
+        margin-bottom: 40px;
+    }
+
+    &_subtitle {
+        color: var(--text-subtitle);
+        font-style: italic;
+    }
+
+    &_container {
+        background-color: white;
+        border-radius: 999px;
+        width: 100%;
+        height: 8px;
+        padding: 4px;
+
+        @include breakpoint(tablet) {
+            margin-top: 180px;
+        }
+
+        &-progreso {
+            background-color: $purple-600; 
+            border-radius: 104px;
+            height: 8px;
+            width: 0;
+        }
+    }
+
+    .categorias {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 40px;
+        margin-bottom: 200px;
+
+        @include breakpoint(tablet) {
+            gap: 24px;
+        }
+
+        &_text {
+            a {
+                text-decoration: none;
+                color: var(--text-title);
+            }
+        }
+
+        &_container {
+            display: flex;
+            align-items: center;
+            background-color: var(--bg-categoria);
+            border-radius: 12px;
+            padding: 16px;
+            gap: 16px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            height: 40px;
+            cursor: pointer;
+            
+
+            @include breakpoint(tablet) {
+                border-radius: 24px;
+                height: 56px;
+            }
+            
+
+            .html {
+                position: relative;
+                width: 40px;
+                height: 32px;
+                top: 3px;
+
+                @include breakpoint(tablet) {
+                    width: 55px;
+                    height: 40px;
+                    top: 5px;
+                }
+
+                &_container {
+                    @include fondo_logo;
+                    background-color: $orange-50;
+                }
+            }
+
+            .css {
+                width: 40px;
+                height: 32px;
+                position: relative;
+                top: 5px;
+
+                @include breakpoint(tablet) {
+                    width: 55px;
+                    height: 40px;
+                    top: 7px;
+                }
+
+                &_container {
+                    @include fondo_logo;
+                    background-color: $green-100;
+                }
+            }
+
+            .js {
+                width: 40px;
+                height: 30px;
+                position: relative;
+                top: 5px;
+
+                @include breakpoint(tablet) {
+                    width: 60px;
+                    height: 40px;
+                    top: 7px;
+                }
+
+                &_container {
+                    @include fondo_logo;
+                    background-color: $blue-50;
+                }
+            }
+
+            .access {
+                width: 40px;
+                height: 30px;
+                position: relative;
+                top: 5px;
+
+                @include breakpoint(tablet) {
+                    width: 60px;
+                    height: 40px;
+                    top: 7px;
+                }
+
+                &_container {
+                    @include fondo_logo;
+                    background-color: $purple-100;
+                }
+            }
+        }
+
+        &_enlace {
+            text-decoration: none;
+            color: var(--text-title);
+        }
+
+    }
+
+    // respuestas
+    &_respuestas {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 40px;
+        margin-bottom: 100px;
+
+        &-container {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 40px 8fr 0.5fr;
+            align-items: center;
+            background-color: var(--container-respuestas);
+            border-radius: 12px;
+            padding: 16px;
+            gap: 16px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+            position: relative;
+            flex-wrap: wrap;
+            cursor: pointer;
+
+            @include breakpoint(tablet) {
+                border-radius: 24px;
+                height: 88px;
+                gap: 32px;
+            }
+
+            .letra {
+                display: flex;
+                justify-content: center;
+                position: relative;
+                bottom: 5px;
+                color: var(--letra-color);
+
+                @include breakpoint(tablet) {
+                    border-radius: 24px;
+                    height: 88px;
+                    gap: 32px;
+                    bottom: 12px;
+                }
+    
+
+                &_container {
+                    @include fondo_logo;
+                    background-color: $grey-50;
+                }
+            }
+
+            .respuesta_check {
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        &-text {
+            color: var(--text-title);
+            margin: 0;
+            word-wrap: break-word;
+            flex: 1; // para que ocupe el espacio restante
+            min-width: 0; // importante para que flexbox no lo fuerce a desbordar
+        }
+    }
+
+    &_button {
+        @include button;
+        cursor: pointer;
+    }
+
+    &_seleccionarRespuesta {
+        display: none ;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        color: $red-500;
+
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+
+.hero_preguntas {
+    @include breakpoint(desktop) {
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 128px;
+    }
+}

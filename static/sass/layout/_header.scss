@@ -1,0 +1,181 @@
+.header {
+    display: flex;
+    justify-content: end;
+    margin-top: 26px;
+
+    @include breakpoint(tablet) {
+        margin-top: 54px;
+    }
+
+    @include breakpoint(desktop) {
+        margin-top: 97px;
+    }
+
+    &_icons {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        @include breakpoint(tablet) {
+            gap: 16px;
+        }
+    }
+    
+
+    &_button {
+        background-color: $purple-600;
+        border-radius: 999px;
+        width: 40px;
+        height: 20px;
+        padding: 4px;
+        cursor: pointer;
+        position: relative;
+
+        &_circle-1 {
+            background-color: white;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+        }
+
+        &_circle-2 {
+            background-color: white;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            left: 24px;
+        }
+    }
+}
+
+.header_preguntas {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 26px;
+
+    &_tema {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        &-container {
+            @include fondo_logo;
+        }
+
+        &-text {
+            color: var(--text-title);
+        }
+
+        #logo-header {
+            width: 40px;
+            height: 32px;
+            position: relative;
+            top: 5px;
+
+            @include breakpoint(tablet) {
+                width: 55px;
+                height: 45px;
+                top: 5px;
+            }
+
+        }
+    }
+
+    &_icons {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        
+
+        @include breakpoint(tablet) {
+            gap: 16px;
+        }
+    }
+
+    &_button {
+        background-color: $purple-600;
+        border-radius: 999px;
+        width: 40px;
+        height: 20px;
+        padding: 4px;
+        position: relative;
+        cursor: pointer;
+
+        &_circle-1 {
+            background-color: white;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+        }
+
+        &_circle-2 {
+            background-color: white;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            left: 24px;
+        }
+    }
+}
+
+
+// Alternamos el modo
+
+.header_button_circle-1 {
+    display: block;
+  }
+
+.header_button_circle-2 {
+    display: none;
+}
+
+.header_preguntas_button_circle-1 {
+    display: block;
+}
+
+.header_preguntas_button_circle-2 {
+    display: none;
+}
+
+[data-theme="dark"] .header_button_circle-1 {
+    display: none;
+}
+
+[data-theme="dark"] .header_preguntas_button_circle-1 {
+    display: none;
+}
+
+[data-theme="dark"] .header_button_circle-2  {
+    display: block;
+}
+
+[data-theme="dark"] .header_preguntas_button_circle-2 {
+    display: block;
+}
+
+
+
+.sol-claro,
+.luna-claro {
+    display: none;
+}
+
+.sol-oscuro,
+.luna-oscuro {
+    display: block;
+}
+
+/* En modo oscuro */
+[data-theme="dark"] .sol-oscuro,
+[data-theme="dark"] .luna-oscuro {
+    display: none;
+}
+
+[data-theme="dark"] .sol-claro,
+[data-theme="dark"] .luna-claro {
+    display: block;
+}

@@ -1,0 +1,140 @@
+@import 'mixins';
+
+$bp-tablet: 768px;
+$bp-tablet-horizontal: 1024px;
+$bp-desktop: 1220px;
+$bp-desktop-xl: 1440px;
+
+
+// Colores modo claro
+$blue-950: #2D3949;
+$blue-850: #3B4D66;
+$blue-500: #306AFF;
+$blue-300: #ABC1E1;
+$blue-100: #EDF1F9;
+$blue-50: #EBF0FF;
+
+$grey-50: #F4F6FA;
+
+$green-500: #2FD887;
+$green-100: #E0FDEF;
+
+$purple-600: #A729F5;
+$purple-100: #F6E7FF;
+
+$orange-400: #FF7E35;
+$orange-50: #FFF5ED;
+
+$red-500: #EE5454;
+
+:root {
+    --bg-categoria: white;
+    --text-subtitle: #626C7F;
+    --bg-color: #F4F6FA;
+    --text-title: #313E51;
+    --container-respuestas: white;
+    --letra-color: #626C7F;
+  }
+  
+[data-theme="dark"] {
+    --text-title: white;
+    --text-subtitle: #ABC1E1;
+    --bg-categoria: #3B4D66;
+    --bg-color: #313E51;
+    --container-respuestas: #3B4D66;
+    --letra-color: #626C7F;
+}
+
+
+//Tipografías
+$font-primary: "Rubik", sans-serif;
+
+// Text presets
+.text-preset-1 {
+    font-size: 88px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    font-weight: 500;
+
+    @include breakpoint(tablet) {
+        font-size: 144px;
+    }
+}
+
+.text-preset-2 {
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    font-weight: 500;   
+
+    @include breakpoint(tablet) {
+        font-size: 64px;
+    }
+}
+
+.text-preset-2-light {
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    font-weight: 300;
+
+    @include breakpoint(tablet) {
+        font-size: 64px;
+    }
+}
+
+.text-preset-3 {
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0px;
+    font-weight: 500;
+
+    @include breakpoint(tablet) {
+        font-size: 36px;
+    }
+}
+
+.text-preset-4 {
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    font-weight: 500;
+
+    @include breakpoint(tablet) {
+        font-size: 28px;
+    }
+}
+
+.text-preset-5-mobile {
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0px; 
+    font-style: italic;
+}
+
+.text-preset-5-medium {
+    @include breakpoint(tablet) {
+        font-size: 24px;
+        line-height: 150%;
+        letter-spacing: 0px; 
+        font-weight: 500;
+    }
+}
+
+.text-preset-5-regular {
+    @include breakpoint(tablet) {
+        font-size: 24px;
+        line-height: 150%;
+        letter-spacing: 0px; 
+        font-weight: 400;
+    }
+}
+
+.text-preset-6 {
+    @include breakpoint(tablet) {
+        font-size: 20px;
+        line-height: 150%;
+        letter-spacing: 0px; 
+        font-style: italic ;
+    }
+}

@@ -1,0 +1,48 @@
+html *{
+    font-family: $font-primary;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 10%;
+    background-image: url(../../static/images/pattern-background-mobile-light.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 40px left;
+
+    @include breakpoint(tablet) {
+        background-image: url(../../static/images/pattern-background-tablet-light.svg);
+        background-repeat: no-repeat;
+        background-position: top -60px left;
+    }
+
+    @include breakpoint(desktop) {   
+        background-image: url(../../static/images/pattern-background-desktop-light.svg);
+        background-repeat: no-repeat;
+        background-position: left top;
+        background-size: 1440px;
+     
+    }
+    
+} 
+
+[data-theme="dark"] body {
+    background-image: url(../../static/images/pattern-background-mobile-dark.svg);
+    overflow-x: hidden;
+    margin: 10%;
+    background-repeat: no-repeat;
+    background-position: bottom 40px left;
+
+    @include breakpoint(tablet) {
+        background-image: url(../../static/images/pattern-background-tablet-dark.svg);
+        background-repeat: no-repeat;
+        background-position: top -60px left;
+    }
+
+    @include breakpoint(desktop) {   
+        background-image: url(../../static/images/pattern-background-desktop-dark.svg);
+        background-repeat: no-repeat;
+        background-position: left top;
+        background-size: 1440px;
+     
+    }
+}

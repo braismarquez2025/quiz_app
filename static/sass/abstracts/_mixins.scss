@@ -1,0 +1,52 @@
+@mixin breakpoint($bp) {
+  @if $bp == tablet {
+    @media (min-width: $bp-tablet) {
+      @content;
+    }
+  }
+
+  @if $bp == tablethorizontal {
+    @media (min-width: $bp-tablet-horizontal) {
+      @content;
+    }
+  }
+
+  @if $bp == desktop {
+    @media (min-width: $bp-desktop) {
+      @content;
+    }
+  }
+
+  @if $bp == desktopxl {
+    @media (min-width: $bp-desktop-xl) {
+      @content;
+    }
+  }
+}
+
+@mixin fondo_logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+
+  @include breakpoint(tablet) {
+    width: 56px;
+    height: 56px;
+  }
+}
+
+@mixin button {
+    background-color: $purple-600;
+    border-radius: 12px;
+    padding: 16px;
+    width: 100%;
+    height: 56px;
+    color: white;
+    border: none;
+
+    @include breakpoint(tablet) {
+      height: 92px;
+      margin-top: 32px;
+  }
+
+}

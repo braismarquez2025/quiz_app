@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+
+{% block 'page_content' %}
+{% load static %}
+<body>
+
+    {% include "_includes/_header.html" %}
+
+    <main class="hero_preguntas">
+      <div class="texto">
+        <p class="hero_subtitle text-preset-5"></p>
+        <h1 class="hero_title text-preset-3"></h1>
+
+        <div class="hero_container">
+          <div class="hero_container-progreso" id="barra-progreso"></div>
+        </div>
+      </div>
+      <section class="hero_respuestas">
+          <div class="hero_respuestas-container">
+              <div class="letra_container">
+                  <p class="letra text-preset-4">A</p>    
+              </div>
+              <h2 class="hero_respuestas-text text-preset-4"></h2>
+              <img src="" class="check">
+          </div>
+
+          <div class="hero_respuestas-container">
+              <div class="letra_container">
+                  <p class="letra text-preset-4">B</p>    
+              </div>  
+              <h2 class="hero_respuestas-text text-preset-4"></h2>
+              <img src="" class="check">
+          </div>
+
+
+          <div class="hero_respuestas-container">
+              <div class="letra_container">
+                  <p class="letra text-preset-4">C</p>    
+              </div>  
+                <h2 class="hero_respuestas-text text-preset-4"></h2>
+                <img src="" class="check">
+          </div>
+
+          <div class="hero_respuestas-container">
+              <div class="letra_container">
+                  <p class="letra text-preset-4">D</p>    
+              </div>  
+              <h2 class="hero_respuestas-text text-preset-4"></h2>
+              <img src="" class="check">
+          </div>
+
+          <button class="hero_button text-preset-4">Submit Answer</button>
+
+          <div class="hero_seleccionarRespuesta">
+            <img src="{% static 'images/icon-incorrect.svg' %}" alt="error">
+            <p class="text-preset-4">Please select an answer</p>
+          </div>
+      
+      </section>
+    </main>
+</body>
+
+<script src="{% static 'js/main.js' %}"></script>
+
+
+{% endblock 'page_content' %}
+
+
+
