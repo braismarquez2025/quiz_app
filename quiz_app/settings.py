@@ -124,12 +124,6 @@ STATICFILES_DIRS = [BASE_DIR / 'static']
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
-]
-
-MIDDLEWARE = ["whitenoise.middleware.WhiteNoiseMiddleware"] + MIDDLEWARE
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
@@ -138,10 +132,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-
-BASE_DIR = Path(__file__).resolve().parent.parent
-
 MEDIA_URL = '/images/'
 MEDIA_ROOT = BASE_DIR / 'static' / 'images'
-
+ 
 DEBUG = os.getenv("DEBUG", "False") == "True"
