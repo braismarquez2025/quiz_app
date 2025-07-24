@@ -28,7 +28,7 @@ TEMPLATES_DIR = BASE_DIR / 'quiz_app' / 'templates'
 SECRET_KEY = 'django-insecure-@&pk6zaqa9(z2z#d$i7ufdx45we_htp)_*%j73_2*=!dpr*qrs'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv("DEBUG", "False") == "True"
+DEBUG = "False"
 
 ALLOWED_HOSTS = ['*']
 
@@ -124,7 +124,7 @@ USE_TZ = True
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [BASE_DIR / 'static']
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
@@ -136,5 +136,3 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 MEDIA_URL = '/images/'
 MEDIA_ROOT = BASE_DIR / 'static' / 'images'
- 
-DEBUG = os.getenv("DEBUG", "False") == "True"

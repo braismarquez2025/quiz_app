@@ -1,1 +1,1 @@
-web: python manage.py collectstatic && gunicorn quiz_app.wsgi
+web: gunicorn quiz_app.wsgi
