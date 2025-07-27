@@ -12,22 +12,27 @@ Esta es una solución al [desafío de Frontend Quiz app en Frontend Mentor](http
   - [Lo que aprendí](#lo-que-aprendi)
 - [Autor](#autor)
 
+
 ## Descripción general
+Este proyecto está desarrollado con Django y desplegado en Railway 🚀
+
 
 ### Captura de pantalla
 ![](./static/images/Vite-App-07-23-2025_04_28_PM.png)
 
 
-### Links
+### 🔗 Links
 - [URL de la solución](https://www.frontendmentor.io/solutions/men-navegable-de-pgina-web-html-y-css-vUgVs_SLAZ)
-- [URL del sitio en vivo](https://braismarquez2025.github.io/social-links-profile-main/)
+- Enlace al proyecto completo 👉 [https://web-production-b6c2.up.railway.app](https://web-production-b6c2.up.railway.app)
 
 
 ## Mi proceso
 
-### Llevado a cabo con
+### 🛠 Llevado a cabo con
 - Django
-- Preprocesador SCSS
+- HTML, SCSS, JavaScript
+- Railway (despliegue backend)
+- GitHub Pages (versión estática de portada)
 
 
 ### Lo que aprendí

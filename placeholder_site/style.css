@@ -1,0 +1,26 @@
+body {
+    font-family: sans-serif;
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 4rem;
+  }
+  
+  .container {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    background: #007bff;
+    color: white;
+    padding: 0.8rem 1.2rem;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  
