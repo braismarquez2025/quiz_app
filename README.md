@@ -33,7 +33,7 @@ Este proyecto me ha ayudado un montón en cuanto a juntar el backend como es la 
 
 Me ha gustado mucho hacer el modo oscuro, ya que es algo que nunca antes había realizado.
 
-Agradezco cualquier feedback con la finalidad de seguir mejorando y consiguiendo cada vez más conocimientos!
+Agradezco cualquier feedback con la finalidad de seguir mejorando y consiguiendo cada vez más conocimientos! 🚀
 
 
 ### ✌️ Autor 
