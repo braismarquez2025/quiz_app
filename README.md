@@ -1,4 +1,4 @@
-# Frontend Quiz App
+# 🎓 Frontend Quiz App
 
 Esta es una solución al [desafío de Frontend Quiz app en Frontend Mentor](https://www.frontendmentor.io/challenges/frontend-quiz-app-BE7xkzXQnU). Los desafíos de Frontend Mentor ayudan a mejorar tus habilidades de programación creando proyectos realistas.
 
