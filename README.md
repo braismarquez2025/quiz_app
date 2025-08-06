@@ -12,7 +12,7 @@ Este proyecto está desarrollado con Django y desplegado en Railway 🚀
 
 
 ### 🔗 Links
-- [URL de la solución]([https://www.frontendmentor.io/solutions/men-navegable-de-pgina-web-html-y-css-vUgVs_SLA](https://www.frontendmentor.io/solutions/quiz-app-solution-RRG5GRRi8u)
+- [URL de la solución](https://www.frontendmentor.io/solutions/quiz-app-solution-RRG5GRRi8u)
 - [Enlace al proyecto completo](https://web-production-b6c2.up.railway.app)
 
 
