@@ -2,7 +2,7 @@
     @include breakpoint(desktop) {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 300px);
         margin-top: 85px;
     }
     &_titles {
